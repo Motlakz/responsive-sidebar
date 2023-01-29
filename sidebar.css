@@ -1,0 +1,30 @@
+.toggle {
+    float: right;
+}
+.sidebar {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: blueviolet;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: ease-in-out 0.5s;
+    transform: translate(-100%);
+}
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+}
+.show-sidebar {
+    transform: translate(0);
+}
+.sidebar .links li {
+    list-style: none;
+    padding: 20px;
+}
+.sidebar .links a {
+    color: greenyellow;
+    text-decoration: none;
+}
